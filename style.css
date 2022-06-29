@@ -69,3 +69,16 @@ h1.temp{
 .humidity{
     margin-bottom: 0.2em;
 }
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.weather.loading:after{
+    visibility: visible;
+    content: "loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
